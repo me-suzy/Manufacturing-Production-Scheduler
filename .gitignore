@@ -64,3 +64,20 @@ user_settings.json
 # Output files
 exports/
 reports_output/
+
+# 🔒 SECURITY: Token și script files
+*token*
+*secret*
+*password*
+*github*upload*.py
+Upload*to*GitHub*.py
+github_upload_script*.py
+*.key
+*.pem
+config_private.py
+
+# 🔒 SECURITY: Environment files
+.env*
+*.env
+credentials.json
+auth.json
