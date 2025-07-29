@@ -1,0 +1,66 @@
+{
+  "production_rules": {
+    "priority_weights": {
+      "Critical": 100,
+      "High": 75,
+      "Medium": 50,
+      "Low": 25
+    },
+    "line_compatibility": {
+      "Electronics": [
+        "LINE-A01",
+        "LINE-A02",
+        "LINE-B02"
+      ],
+      "Automotive": [
+        "LINE-A01",
+        "LINE-B01",
+        "LINE-B02"
+      ],
+      "Medical": [
+        "LINE-A02",
+        "LINE-B02"
+      ],
+      "Heavy": [
+        "LINE-B01",
+        "LINE-B02"
+      ],
+      "Precision": [
+        "LINE-B02"
+      ],
+      "Package": [
+        "LINE-C01",
+        "LINE-C02"
+      ],
+      "All": [
+        "LINE-C01",
+        "LINE-C02"
+      ]
+    },
+    "optimization_criteria": {
+      "minimize_delays": 0.4,
+      "maximize_efficiency": 0.3,
+      "balance_workload": 0.2,
+      "minimize_setup_time": 0.1
+    },
+    "constraints": {
+      "max_continuous_hours": 16,
+      "min_break_between_shifts": 8,
+      "max_overtime_per_week": 20,
+      "quality_check_mandatory": true
+    }
+  },
+  "capacity_rules": {
+    "efficiency_factors": {
+      "new_product": 0.7,
+      "standard_product": 0.85,
+      "optimized_product": 0.95
+    },
+    "setup_complexity": {
+      "same_product_type": 1.0,
+      "different_product_type": 1.5,
+      "different_material": 2.0,
+      "different_tooling": 2.5
+    }
+  }
+}
